@@ -40,30 +40,8 @@
 ------------------*/
 .container {
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    /* padding-left: 20px;
-    padding-right: 20px; */
-}
 
-.row {
-    display: flex;
 }
-
-.gap-10 {
-    gap: 10px;
-}
-.gap-20 {
-    gap: 20px;
-}
-.gap-30 {
-    gap: 30px;
-}
-
-.col {
-    flex-grow: 1;
-}
-
 /*----------------
     TYPOGRAPHY
 ------------------*/
@@ -80,23 +58,6 @@ body {
 /*----------------
     BUTTONS
 ------------------*/
-.btn {
-    background-color: transparent;
-    font-family: inherit;
-    border: none;
-    padding: 6px 12px;
-    cursor: pointer;
-}
-
-.btn-large {
-    padding: 10px 20px;
-    font-size: 16px;
-}
-
-.btn-primary {
-    background-color: lightcoral;
-    color: #fff;
-}
 
 /*----------------
     HEADER
@@ -105,7 +66,25 @@ body {
 header{
     width: 50px;
     flex-shrink: 0;
+    background-color: black;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
+.menu-top ul li{
+    color: #fff;
+
+}
+
+.menu-bottom ul li:first-child{
+    padding: 5px;
+}
+
+.menu-bottom ul li:last-child > img{
+    background-color: #808080;
+    border-radius: 100%;
 }
 
 /*----------------
@@ -114,6 +93,8 @@ header{
 main{
     flex-grow: 1;
     overflow-y:auto;
+    background-color: #141922;
+    color: #fff ;
 }
 /*----------------
     FOOTER
@@ -121,6 +102,7 @@ main{
 
 footer{
     height: 90px;
+    background-color: #282828;
 }
 
 
@@ -130,6 +112,11 @@ footer{
 ------------------------------- */
 
 @media screen and (min-width:639px){
+    
+    .app-wrapper{
+        height: calc(100% - 100px);
+    }
+    
     header{
         width: 240px;
     }
