@@ -60,7 +60,8 @@
     TYPOGRAPHY
 ------------------*/
 body {
-    font-family: "Roboto", serif;
+    width: 100vw;
+    height: 100vh;
 }
 
 /*----------------
@@ -88,10 +89,24 @@ body {
     HEADER
 ------------------*/
 
+header{
+    height: calc(100% - 100px) ;
+    width: 250px;
+    background-color: blue;
+}
+
 /*----------------
     MAIN
 ------------------*/
-
+main{
+    overflow: hidden;
+}
 /*----------------
     FOOTER
 ------------------*/
+
+footer{
+    height: 100px;
+    width: 100vw;
+    background-color: red;
+}
