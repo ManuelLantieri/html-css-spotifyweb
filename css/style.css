@@ -5,6 +5,14 @@
     border: 2px dashed blueviolet;
 }
 
+.debug  footer{
+    background-color: red;
+}
+
+.debug .app-wrapper header{
+    background-color: lightblue;
+}
+
 .debug .row .col {
     border: 2px dashed lightcoral;
     background-color: rgba(240, 128, 128, 0.2);
@@ -66,7 +74,7 @@ body {
 
 .app-wrapper{
     display: flex;
-    height: calc(100% - 100px);
+    height: calc(100% - 90px);
 }
 
 /*----------------
@@ -95,8 +103,7 @@ body {
 ------------------*/
 
 header{
-    width: 240px;
-    background-color: blue;
+    width: 50px;
     flex-shrink: 0;
 
 }
@@ -113,6 +120,23 @@ main{
 ------------------*/
 
 footer{
-    height: 100px;
-    background-color: red;
+    height: 90px;
+}
+
+
+
+/* ----------------------------
+        RESPONSIVE
+------------------------------- */
+
+@media screen and (min-width:639px){
+    header{
+        width: 240px;
+    }
+
+
+    footer{
+        height: 100px;
+    }
+    
 }
