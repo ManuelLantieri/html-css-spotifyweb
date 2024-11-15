@@ -122,6 +122,10 @@ header{
     text-align: center;
 }
 
+.menu-bottom span{
+    display: none;
+}
+
 /*----------------
     MAIN
 ------------------*/
@@ -195,6 +199,7 @@ footer{
 
     .menu-bottom ul li img{
         width: 30px;
+        vertical-align: middle;
     }
 
     .menu-bottom ul{
@@ -211,6 +216,9 @@ footer{
         border-bottom: 1px solid #fff
     }
 
+    .menu-bottom span{
+        display: inline;
+    }
 
     footer{
         height: 100px;
