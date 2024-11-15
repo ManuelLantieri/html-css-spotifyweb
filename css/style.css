@@ -75,6 +75,7 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    overflow-y: scroll;
 }
 
 .logo-big{
@@ -108,15 +109,17 @@ header{
     display: none;
 }
 
-
-
-.menu-bottom ul li:first-child{
-    padding: 5px;
+.menu-bottom ul li:first-child img{
+    width:25px 
 }
 
 .menu-bottom ul li:last-child > img{
     background-color: #808080;
     border-radius: 100%;
+}
+
+.menu-bottom ul li{
+    text-align: center;
 }
 
 /*----------------
@@ -151,17 +154,18 @@ footer{
     
     header{
         width: 240px;
-        display: block;
         padding-left: 20px;
+        overflow-y: scroll;
     }
+
 
     .logo-big{
         display: block;
         margin-right: 70px;
+        height: 90px;
     }
 
     .menu-top{
-        margin-top: 25px;
     }
 
     .menu-top ul{
@@ -189,11 +193,23 @@ footer{
         display: block;
     }
 
-
-    .menu-bottom{
-        display: none;
+    .menu-bottom ul li img{
+        width: 30px;
     }
 
+    .menu-bottom ul{
+        list-style: none;
+    }
+
+    .menu-bottom ul li{
+        text-align: left;
+        padding: 10px;
+
+    }
+
+    .menu-bottom ul li:first-child{
+        border-bottom: 1px solid #fff
+    }
 
 
     footer{
