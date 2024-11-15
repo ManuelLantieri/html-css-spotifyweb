@@ -33,6 +33,7 @@
 ------------------*/
 .img-fluid {
     max-width: 100%;
+    max-height: 100%;
 }
 
 /*----------------
@@ -47,6 +48,9 @@
 ------------------*/
 body {
     height: 100vh;
+    font-family: "Work Sans", sans-serif;
+    color: #fff;
+
 
 }
 
@@ -73,10 +77,38 @@ header{
     justify-content: space-between;
 }
 
-.menu-top ul li{
-    color: #fff;
-
+.logo-big{
+    display: none;
 }
+
+.menu-top ul li img{
+    width: 100%
+}
+
+.menu-top span{
+    display: none;
+}
+
+.playlist ul{
+    list-style: none;
+}
+
+.playlist ul li{
+    padding-bottom: 15px;
+}
+
+.playlist ul li:nth-child(2) i{
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    line-height: 30px;
+}
+
+.playlist{
+    display: none;
+}
+
+
 
 .menu-bottom ul li:first-child{
     padding: 5px;
@@ -119,7 +151,49 @@ footer{
     
     header{
         width: 240px;
+        display: block;
+        padding-left: 20px;
     }
+
+    .logo-big{
+        display: block;
+        margin-right: 70px;
+    }
+
+    .menu-top{
+        margin-top: 25px;
+    }
+
+    .menu-top ul{
+        list-style: none;
+    }
+
+    .menu-top ul li{
+        padding-bottom: 20px;
+    }
+
+    .menu-top ul li:first-child{
+        display: none;
+    }
+
+    .menu-top ul li img{
+        width: 30px;
+        vertical-align: middle;
+    }
+    
+    .menu-top span{
+        display: inline;
+    }
+
+    .playlist{
+        display: block;
+    }
+
+
+    .menu-bottom{
+        display: none;
+    }
+
 
 
     footer{
