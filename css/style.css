@@ -330,7 +330,43 @@ section:last-child img{
 footer{
     height: 90px;
     background-color: #282828;
+    display: flex;
 }
+
+.player-left{
+    max-height: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;    
+}
+
+.song{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.icon-like-folder{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.player-middle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.player-button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.player-slider{
+    display: flex;
+    align-items: center;
+}
+
 
 
 
