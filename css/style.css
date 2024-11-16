@@ -331,6 +331,7 @@ footer{
     height: 90px;
     background-color: #282828;
     display: flex;
+    justify-content: space-between;
 }
 
 .player-left{
@@ -367,6 +368,10 @@ footer{
     align-items: center;
 }
 
+.player-right{
+    display: flex;
+    align-items: center;
+}
 
 
 
