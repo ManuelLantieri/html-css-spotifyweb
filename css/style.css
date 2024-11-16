@@ -176,7 +176,7 @@ main{
 
 section h2{
     color: #fff;
-    margin-bottom: 20px;
+    margin:  20px 0;
 }
 
 .row{
@@ -184,22 +184,62 @@ section h2{
     flex-wrap: wrap;
 }
 
+.col h3{
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+}
+
+.subtitle{
+    margin-bottom: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.col h4{
+    text-align: center;
+    font-size: 12px;
+}
+
 .col{
-    padding: 10px;
+    padding: 5px;
     /* min-height: 300px; */
     width: calc(100% / 2);
+    margin-bottom: 20px;
 }
 
 .cover-img{
     position: relative;
+    padding: 5px;
 }
 
+.cover-img:hover img{
+    opacity: 0.3;
+    transition: 0.5s;
+}
+
+.cover-img:hover .hover-play{
+    opacity: 1;
+    transition: 0.7s;
+}
+
+.cover-img img{
+    opacity: 1;
+}
+
+
+
 .cover-img .hover-play{
+    color: #fff;
+    font-size: 90px;
     position: absolute;
     top:50%;
     left:50%;
     transform: translate(-50%, -50%);
+    opacity: 0;
 }
+
+
 
 
 
