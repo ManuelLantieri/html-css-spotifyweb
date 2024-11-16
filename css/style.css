@@ -72,7 +72,9 @@ body {
     border-radius: 30px;
 }
 
-
+.btn{
+    border: none;
+}
 
 /*----------------
     HEADER
@@ -89,8 +91,35 @@ header{
     overflow-y: scroll;
 }
 
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #555; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #888;
+    transition: 0.5s;
+  }
+
+
 .logo-big{
     display: none;
+}
+
+.menu-top ul li{
+    font-weight:600;
 }
 
 .menu-top ul li img{
@@ -99,6 +128,16 @@ header{
 
 .menu-top span{
     display: none;
+    cursor: pointer;
+}
+
+.menu-top ul li:nth-child(2){
+    color: #fff;
+}
+
+.menu-top span:hover{
+    color: #fff;
+    transition: 0.5s;
 }
 
 .playlist ul{
@@ -106,7 +145,28 @@ header{
 }
 
 .playlist ul li{
-    padding-bottom: 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.playlist ul li:not(li:first-child){
+    font-weight: 600;
+}
+
+.playlist ul li >h3{
+    color: #fff;
+    font-size: 25px;
+}
+
+.playlist ul li:hover{
+    color: #fff;
+    transition: 0.5s;
+}
+
+.playlist ul li:nth-child(2) i:hover{
+    background-color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
 }
 
 .playlist ul li:nth-child(2) i{
@@ -114,6 +174,8 @@ header{
     height: 30px;
     vertical-align: middle;
     line-height: 30px;
+    background-color: #7d7f84;
+    border: none;
 }
 
 .playlist{
@@ -126,16 +188,24 @@ header{
 
 .menu-bottom ul li:last-child > img{
     background-color: #808080;
-    border-radius: 100%;
+    border-radius: 50%;
 }
 
 .menu-bottom ul li{
     text-align: center;
 }
 
+.menu-bottom span:hover{
+    cursor: pointer;
+    color: #fff;
+    transition: 0.5s;
+}
+
 .menu-bottom span{
+    font-weight: 600;
     display: none;
 }
+
 
 /*----------------
     MAIN
@@ -172,6 +242,11 @@ main{
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
+}
+
+.general-nav ul li:hover{
+    color: #fff;
+    cursor: pointer;
 }
 
 section h2{
@@ -225,6 +300,7 @@ section h2{
 
 .cover-img img{
     opacity: 1;
+    cursor: pointer;
 }
 
 
@@ -237,6 +313,7 @@ section h2{
     left:50%;
     transform: translate(-50%, -50%);
     opacity: 0;
+    cursor: pointer;
 }
 
 section:last-child img{
