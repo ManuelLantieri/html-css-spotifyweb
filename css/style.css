@@ -239,6 +239,9 @@ section h2{
     opacity: 0;
 }
 
+section:last-child img{
+    border-radius: 50%;
+}
 
 
 
