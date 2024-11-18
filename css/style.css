@@ -246,9 +246,31 @@ main{
     gap: 20px;
 }
 
-.general-nav ul li:hover{
+.general-nav a:hover{
     color: #fff;
     cursor: pointer;
+}
+
+.general-nav a{
+    color: #7d7f84;
+    text-decoration: none;
+}
+
+.general-nav ul li{
+    position: relative;
+}
+
+.general-nav .hover-link{
+    height: 3px;
+    width: 40px;
+    background-color: #adff2f;
+    position: absolute;
+    left: 25%;
+    display: none;
+}
+
+.general-nav ul li:hover .hover-link{
+    display: block;
 }
 
 section h2{
@@ -345,9 +367,9 @@ footer{
     width: calc(100% / 3);
 }
 
-.player-left img{
+.player-left .img-fluid{
     max-height: 100%;
-    max-width: 45%;
+    max-width: 35%;
 }
 
 .song{
@@ -364,19 +386,28 @@ footer{
 }
 
 .icon-like-folder{
-    padding-left: 10px;
+    padding-left: 20px;
     display: flex;
     flex-wrap: wrap;
-    font-size: 11px;
+    font-size: 15px;
+    gap: 5px;
 }
 
 .player-middle{
-    padding: 0 20px;
+    padding: 0 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 40%;
-    gap: 20px;
+    width: 50%;
+    gap: 10px;
+}
+
+.player-middle .player-button i:not(.fa-circle-play){
+    font-size: 20px;
+}
+
+.fa-circle-play{
+    font-size: 35px;
 }
 
 .player-button{
@@ -415,12 +446,13 @@ footer{
 
 .player-right i{
     padding-right: 10px;
-    font-size: 11px;
+    font-size: 15px;
+    flex-grow: 1 ;
 }
 
 #vol{
-    height: 4px;
-    width: 50%;
+    height: 3px;
+    width: 40%;
 }
 
 
@@ -515,11 +547,56 @@ footer{
     .col{
         width: calc(100% / 4);
     }
+
+
+    /* footer */
+    .player-left{
+        max-width: 240px;
+    }
+
+    .player-right{
+        max-width: 240px;
+    }
+
+    .player-left .img-fluid{
+        max-width: 22%;
+    }
+
+    .song{
+        font-size: 14px;
+    }
+
+    .icon-like-folder{
+        flex-wrap: nowrap;
+        gap: 12px;
+        font-size: 20px;
+    }
+
+    .player-middle{
+        padding: 0 30px;
+    }
+
+    .player-slider{
+        font-size: 14px;
+    }
+
+    .player-right{
+        width: calc(100% / 5);
+    }
+
+    #vol{
+        width: 50%;
+    }
+
 }
 
 /* responsive lg */
 @media screen and (min-width:1440px){
     .col{
         width: calc(100% / 6);
+    }
+
+    .player-middle{
+        width: 45%;
     }
 }
