@@ -72,6 +72,11 @@ body {
     border-radius: 30px;
 }
 
+.upgrade-button:hover{
+    padding: 12px 45px;
+    cursor: pointer;
+}
+
 .btn{
     border: none;
 }
@@ -126,6 +131,10 @@ header{
 
 .menu-top ul li img{
     width: 100%
+}
+
+.menu-top ul li:hover img{
+    border-left: 3px solid #adff2f;
 }
 
 .menu-top span{
@@ -256,21 +265,21 @@ main{
     text-decoration: none;
 }
 
-.general-nav ul li{
+/* .general-nav ul li{
     position: relative;
-}
+} */
 
 .general-nav .hover-link{
     height: 3px;
     width: 40px;
     background-color: #adff2f;
-    position: absolute;
-    left: 25%;
+   margin: auto;
     display: none;
 }
 
 .general-nav ul li:hover .hover-link{
     display: block;
+    transition: 0.5s;
 }
 
 section h2{
@@ -367,6 +376,12 @@ footer{
     width: calc(100% / 3);
 }
 
+.icon-like-folder i:hover{
+    color: #fff;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
 .player-left .img-fluid{
     max-height: 100%;
     max-width: 35%;
@@ -383,6 +398,11 @@ footer{
 .song-name{
     font-weight: 500;
     color: #fff;
+}
+
+.song-artist:hover{
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .icon-like-folder{
@@ -402,11 +422,22 @@ footer{
     gap: 10px;
 }
 
+.player-button i:hover{
+    color: #fff;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
 .player-middle .player-button i:not(.fa-circle-play){
     font-size: 20px;
 }
 
 .fa-circle-play{
+    font-size: 30px;
+    color: #fff;
+}
+
+.fa-circle-play:hover{
     font-size: 35px;
 }
 
@@ -427,6 +458,10 @@ footer{
     display: flex;
     align-items: center;
     flex-grow: 1;
+}
+
+#song-minutes{
+    accent-color: #1db954;
 }
 
 .player-slider input {
@@ -450,9 +485,16 @@ footer{
     flex-grow: 1 ;
 }
 
+.player-right i:hover{
+    color: #fff;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
 #vol{
     height: 3px;
     width: 40%;
+    accent-color: #1db954;
 }
 
 
