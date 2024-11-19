@@ -126,8 +126,8 @@ header{
 }
 
 .left-bord-green{
-    height: 30px;
-    width: 4px;
+    height: 20px;
+    width: 2px;
     background-color: #adff2f;
     position: absolute;
     left: -5px;
@@ -564,6 +564,12 @@ footer{
 
     .menu-top ul{
         list-style: none;
+    }
+
+    .menu-top ul li:hover .left-bord-green{
+        opacity: 1;
+        width: 4px;
+        height: 30px;
     }
 
     .menu-top ul li{
