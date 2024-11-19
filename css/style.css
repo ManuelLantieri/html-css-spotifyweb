@@ -237,19 +237,25 @@ main{
     overflow-y:auto;
     background-color: #141922;
     color: #7d7f84 ;
+    position: relative;
 
 }
 
 .main-head{
     background-color: #080b12;
     height: 90px;
+    width: calc(100% - 50px);
     padding:20px;
+    opacity: 0.8;
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    position:fixed;
+    z-index: 100;
 }
 
 .main-body{
+    margin-top: 90px;
     padding: 20px;
 }
 
@@ -617,7 +623,9 @@ footer{
     }
 
     /* main */
-
+    .main-head{
+        width: calc(100% - 240px);
+    }
 
 
 
