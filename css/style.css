@@ -448,17 +448,18 @@ footer{
     cursor: pointer;
 }
 
-.player-middle .player-button i:not(.fa-circle-play){
+.player-middle .player-button i{
     font-size: 20px;
+    transform: scale(1);
+    transition: 0.5s;
 }
 
 .fa-circle-play{
-    font-size: 30px;
     color: #fff;
 }
 
 .player-button .fa-circle-play:hover{
-    font-size: 35px;
+    transform: scale(1.7);
 }
 
 .player-button{
