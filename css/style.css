@@ -293,30 +293,7 @@ main{
     display: none;
     position: absolute;
     left: 10%;
-}
-
-.general-nav li:first-child .hover-link{
-    width: 75px;
-}
-
-.general-nav li:nth-child(2) .hover-link{
-    width: 60px;
-}
-
-.general-nav li:nth-child(3) .hover-link{
-    width: 80px;
-}
-
-.general-nav li:nth-child(4) .hover-link{
-    width: 100px;
-}
-
-.general-nav li:nth-child(5) .hover-link{
-    width: 95px;
-}
-
-.general-nav li:last-child .hover-link{
-    width: 48px;
+    right: 10%;
 }
 
 .general-nav ul li:hover .hover-link{
